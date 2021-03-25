@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import data from "./data";
+import ArticleComponent from "./ArticleComponent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {data.map((data) => (
+        <ArticleComponent
+          name={data.name}
+          date={data.date}
+          title={data.title}
+          article={data.article}
+          image={data.image}
+          title_pic={data.title_pic}
+          key={data.id}
+        />
+      ))}
     </div>
   );
 }

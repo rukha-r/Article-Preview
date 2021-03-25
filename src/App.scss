@@ -1,0 +1,122 @@
+@mixin icon {
+  background: gray;
+  color: white;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-in-out;
+  -moz-transition: 300ms ease-in-out;
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+body {
+  background: purple;
+}
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  .card {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    width: 65%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.6);
+    .title-picture {
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 0 0 5px;
+      }
+    }
+    .title-part {
+      padding: 30px;
+      word-spacing: 3px;
+      .title {
+        opacity: 0.9;
+      }
+      .article {
+        opacity: 0.6;
+      }
+      .user {
+        margin-top: 30px;
+        width: 100%;
+        .user-image {
+          width: 15%;
+          padding-right: 20px;
+          border-radius: 50%;
+          float: left;
+        }
+        .user-name {
+          padding-bottom: 5px;
+        }
+        .date {
+          opacity: 0.5;
+        }
+        .share-options {
+          cursor: pointer;
+          float: right;
+          text-align: center;
+          color: white;
+          margin-top: -50px;
+          margin-bottom: 5px;
+          margin-right: -50px;
+          .share-hiden {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 5px;
+            width: 150px;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.8);
+            small {
+              opacity: 0.4;
+              padding-right: 5px;
+            }
+            a {
+              color: white;
+              width: 20px;
+              padding: 5px;
+              opacity: 0.5;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+          .share-icon {
+            @include icon;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-wrapper {
+    padding-top: 30px;
+    .card {
+      display: block;
+      width: 300px;
+      height: auto;
+      .share-options {
+        width: 40px;
+        transform: translate(-30px);
+        .share-hiden {
+          margin-left: -60px;
+        }
+      }
+    }
+  }
+}

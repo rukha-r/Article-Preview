@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Article-Preview/static/css/main.d5d9964c.chunk.css",
+    "main.js": "/Article-Preview/static/js/main.e43d1fe1.chunk.js",
+    "main.js.map": "/Article-Preview/static/js/main.e43d1fe1.chunk.js.map",
+    "runtime-main.js": "/Article-Preview/static/js/runtime-main.72517f0b.js",
+    "runtime-main.js.map": "/Article-Preview/static/js/runtime-main.72517f0b.js.map",
+    "static/js/2.2de1819f.chunk.js": "/Article-Preview/static/js/2.2de1819f.chunk.js",
+    "static/js/2.2de1819f.chunk.js.map": "/Article-Preview/static/js/2.2de1819f.chunk.js.map",
+    "index.html": "/Article-Preview/index.html",
+    "static/css/main.d5d9964c.chunk.css.map": "/Article-Preview/static/css/main.d5d9964c.chunk.css.map",
+    "static/js/2.2de1819f.chunk.js.LICENSE.txt": "/Article-Preview/static/js/2.2de1819f.chunk.js.LICENSE.txt",
+    "static/media/drawers.215b76a8.jpg": "/Article-Preview/static/media/drawers.215b76a8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72517f0b.js",
+    "static/js/2.2de1819f.chunk.js",
+    "static/css/main.d5d9964c.chunk.css",
+    "static/js/main.e43d1fe1.chunk.js"
+  ]
+}
